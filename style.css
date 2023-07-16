@@ -78,12 +78,104 @@ align-items: center;
 }
 /* Header Section End */
 
+/* Feature Section Start */
+.feature-container{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+}
+.feature-title{
+    color: var(--dark-03, #727272);
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+.of-our{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.feature{
+    color: #FF900E;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.feature-description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+/* Feature Section Start */
 
-
-
-
-
-
+.feature-card-container{
+    display: flex;
+    margin-top: 150px;
+    gap: 40px;
+}
+.feature-card-container-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-card-container-title{
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.feature-card-container-description{
+    color: #727272;
+    font-size: 1rem;
+    margin-top: 20px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.feature-card{
+    border-radius: 8px;
+    background: #FFF;
+    padding: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+}
+.feature-card-title{
+    color: #131313;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.feature-card-description{
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+.feature-card-image{
+    height: 80%;
+    margin-left: 90px;
+}
+.ten-years-card{
+    width: 342px;
+    border-radius: 8px;
+    background: #FF900E;
+    padding: 40px;
+    position: relative;
+    bottom: 100px;
+}
+.ten-year-title{
+    color: #FFF;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.ten-year-description{
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+}
 
 
 
@@ -92,7 +184,10 @@ align-items: center;
 
 
 @media screen and (max-width: 576px) {
-    nav, nav ul{
+    nav, nav ul, {
+        flex-direction: column;
+    }
+    .feature-container{
         flex-direction: column;
     }
     nav li{
